@@ -1,0 +1,20 @@
+.ourteam {
+  padding-top: 0;
+  &__item {
+    position: relative;
+  }
+  &__applications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+    color: $fifhtcolor;
+    width: 370px;
+    height: 70px;
+    background-color: $fourteenthcolor;
+    position: absolute;
+    bottom: 0px;
+  }
+}
