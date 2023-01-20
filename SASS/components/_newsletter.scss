@@ -44,6 +44,8 @@
     padding-bottom: 0px;
     fill: $fifhtcolor;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+    margin-right: auto;
   }
   &__button:hover,
   &__button:focus {
