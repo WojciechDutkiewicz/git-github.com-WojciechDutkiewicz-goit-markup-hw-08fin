@@ -1,7 +1,14 @@
+//mobile and tablet
 .brandname {
   display: block;
   font-family: $secondfontfamily;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.03em;
+}
+//desktop
+@media (min-width: 1200px) {
+  .brandname {
+    font-size: 26px;
+  }
 }

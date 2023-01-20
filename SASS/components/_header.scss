@@ -1,14 +1,39 @@
+//mobile
 .header {
   margin: 0 auto;
   border-bottom: 1px solid $thirteenthcolor;
   &__container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-between;
   }
   &__brandname {
     color: $secondcolor;
+  }
+}
+//tablet
+@media (min-width: 768px) {
+  .header__brandname {
+    margin-right: 83px;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: left;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+//desktop
+@media (min-width: 1200px) {
+  .header__container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .header__brandname {
     margin-right: 93px;
   }
 }

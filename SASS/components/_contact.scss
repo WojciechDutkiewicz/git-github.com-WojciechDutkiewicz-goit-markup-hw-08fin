@@ -1,21 +1,44 @@
+//mobile
 .contact {
-  color: $thirdcolor;
-  margin-left: 350px;
-  &__img {
-    margin-right: 10px;
-    fill: currentColor;
+  display: none;
+}
+
+//tablet
+@media (min-width: 768px) {
+  .contact {
+    display: block;
+    color: $thirdcolor;
+    &__img {
+      fill: currentColor;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      color: currentColor;
+      letter-spacing: 0.02em;
+      font-size: 12px;
+      gap: 8px;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: $fourthcolor;
+    }
   }
-  &__link {
+}
+//desktop
+@media (min-width: 1200px) {
+  .contact {
     display: flex;
-    align-items: center;
-    font-weight: 500;
-    color: currentColor;
-    letter-spacing: 0.02em;
-    font-size: 14px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link:hover,
-  &__link:focus {
-    color: $fourthcolor;
+    margin-left: 350px;
+
+    &__link {
+      gap: 10px;
+      font-size: 14px;
+    }
   }
 }

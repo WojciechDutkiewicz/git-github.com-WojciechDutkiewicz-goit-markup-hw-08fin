@@ -39,12 +39,25 @@ button {
   justify-content: center;
   align-items: center;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+//mobile
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+//tablet
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+//desktop
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }

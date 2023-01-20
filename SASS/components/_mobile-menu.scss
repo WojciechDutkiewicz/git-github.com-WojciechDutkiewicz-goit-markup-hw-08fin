@@ -1,21 +1,16 @@
 .menu {
   position: fixed;
   top: 0;
-  right: 0;
-  display: none;
   opacity: 0;
-  width: 480px;
-  height: 796px;
+  width: 100vw;
+  height: 100vh;
   background-color: $fifhtcolor;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   padding-top: 48px;
   padding-left: 40px;
   &__toggle {
-    position: fixed;
-    top: 0;
-    right: 0;
-    outline: blue 2px solid;
+    background: inherit;
   }
   &__toggle-close {
     position: absolute;
@@ -44,5 +39,14 @@
     font-size: 34px;
     letter-spacing: 0.02em;
     color: $thirdcolor;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+
+    &__toggle {
+      display: none;
+    }
   }
 }

@@ -1,13 +1,27 @@
-.currentsite {
-  color: $fourthcolor;
-  position: relative;
-  &::after {
-    content: '';
-    border-bottom: 4px solid $fourthcolor;
-    border-radius: 2px;
-    position: absolute;
-    width: 53px;
-    top: 46px;
-    left: 0;
+@media (min-width: 768px) {
+  .currentsite {
+    color: $fourthcolor;
+    position: relative;
+    &::after {
+      content: '';
+      border-bottom: 4px solid $fourthcolor;
+      border-radius: 2px;
+      position: absolute;
+      width: 53px;
+      top: 53px;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .currentsite {
+    color: $fourthcolor;
+    position: relative;
+    &::after {
+      content: '';
+      top: 46px;
+      left: 0;
+    }
   }
 }
