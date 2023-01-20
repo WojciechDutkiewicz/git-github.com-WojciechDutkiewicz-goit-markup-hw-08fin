@@ -1,12 +1,14 @@
+//mobile
 .customer-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     color: #afb1b8;
     border: 1px solid currentColor;
@@ -19,5 +21,19 @@
   &__link:hover,
   &__link:focus {
     color: $fourthcolor;
+  }
+}
+//tablet
+@media (min-width: 768px) {
+  .customer-list__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+//dekstop
+@media (min-width: 1200px) {
+  .customer-list__link {
+    width: 170px;
+    height: 92px;
   }
 }

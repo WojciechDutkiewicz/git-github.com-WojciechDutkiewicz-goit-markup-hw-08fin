@@ -1,25 +1,60 @@
+//mobile
 .footer {
   background-color: $sixthcolor;
   padding-top: 60px;
   padding-bottom: 60px;
+  &__social {
+    margin-bottom: 20px;
+  }
   &__brandname {
-    text-align: left;
+    text-align: center;
     color: $fifhtcolor;
     margin-bottom: 20px;
-    margin-right: 171px;
   }
   &__joinus-slogan {
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: $fifhtcolor;
     margin-bottom: 20px;
   }
   &__container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+//tablet
+
+//desktop
+@media (min-width: 1200px) {
+  .footer {
+    background-color: $sixthcolor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__brandname {
+      text-align: left;
+      color: $fifhtcolor;
+      margin-bottom: 20px;
+      margin-right: 171px;
+    }
+    &__joinus-slogan {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      text-transform: uppercase;
+      color: $fifhtcolor;
+      margin-bottom: 20px;
+    }
+    &__container {
+      display: flex;
+      align-items: baseline;
+      flex-direction: row;
+    }
   }
 }
