@@ -27,7 +27,7 @@
     margin: 0 auto;
   }
 }
-@media (min-device-pixel-ratio: 2) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
       url(../images/backgroundimage_mobile2x@2.jpg);
@@ -40,7 +40,7 @@
       url(../images/backgroundimage_tablet.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
       url(../images/backgroundimage_tablet2x@2.jpg);
@@ -63,7 +63,7 @@
       width: 696px;
     }
   }
-  @media (min-device-pixel-ratio: 2) {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .main-section {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
         url(../images/backgroundimage_desktop2x@2.jpg);
