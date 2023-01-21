@@ -1,12 +1,14 @@
 //mobile and tablet
+
 .main-section {
   background-color: $sixthcolor;
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
-    url(../images/backgroundimage.jpg);
+    url(../images/backgroundimage_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin: 0 auto;
   &__header {
     font-size: 26px;
@@ -25,18 +27,31 @@
     margin: 0 auto;
   }
 }
-
+@media (min-device-pixel-ratio: 2) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
+      url(../images/backgroundimage_mobile2x@2.jpg);
+  }
+}
+//tablet
+@media (min-width: 768px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
+      url(../images/backgroundimage_tablet.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
+      url(../images/backgroundimage_tablet2x@2.jpg);
+  }
+}
 //desktop
 @media (min-width: 1200px) {
   .main-section {
-    background-color: $sixthcolor;
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
-      url(../images/backgroundimage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
+      url(../images/backgroundimage_desktop.jpg);
+
     &__header {
       font-size: 44px;
       font-weight: 900;
@@ -47,11 +62,11 @@
       margin-bottom: 30px;
       width: 696px;
     }
-
-    &__button {
-      text-align: center;
-      padding: 10px 41px;
-      margin: 0 auto;
+  }
+  @media (min-device-pixel-ratio: 2) {
+    .main-section {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 50%),
+        url(../images/backgroundimage_desktop2x@2.jpg);
     }
   }
 }

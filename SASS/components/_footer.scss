@@ -29,6 +29,14 @@
 }
 
 //tablet
+@media (min-width: 768px) {
+  .footer__wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 //desktop
 @media (min-width: 1200px) {
@@ -54,8 +62,14 @@
     }
     &__container {
       display: flex;
-      align-items: baseline;
+      align-items: stretch;
       flex-direction: row;
     }
+  }
+  .footer__wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }

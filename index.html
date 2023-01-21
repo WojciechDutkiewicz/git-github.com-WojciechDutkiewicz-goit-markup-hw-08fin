@@ -155,7 +155,17 @@
           <h2 class="secondheader lastsection__header">Nasz zespół</h2>
           <ul class="list lastsection__list">
             <li class="lastsection__employee">
+              <picture>
+                <source
+                  srcset="
+                    ./images/person_one/person_one-tablet/person_one-desktop@1x.jpg x1,
+                    ./images/person_one/person_one-tablet/person_one-desktop@2x.jpg 2x
+                    
+                  "
+                  media="(max-width: 767px)"
+                />
               <img class="lastsection__employee-icon" src="images/john-dee-one.jpg" alt="pracownik nr 1" width="270" height="260" />
+              </picture>
               <div class="lastsection__employee-description">
                 <h3 class="lastsection__employee-name">John Doe</h3>
                 <p class="lastsection__employee-position">Product Designer</p>
@@ -283,6 +293,7 @@
 
     <footer class="footer">
       <div class="container footer__container">
+        <div class="footer__wrapper">
         <div class="footer__brandparagraph">
         <a href="index.html" class="brandname footer__brandname"><span class="pieceofbrand footer__pieceofbrand">Web</span>Studio</a>
         <address class="adress footer__adress">
@@ -317,7 +328,7 @@
                   <use href="./sprite.svg#icon-linkedin"></use>
                 </svg></a></li>
               </ul>
-                </div>
+                </div></div>
                
                 <form class="newsletterform footer__form">
                   
@@ -360,20 +371,55 @@
 
       <ul class="menu__nav">
         <li class="menu__item">
-          <a class="menu__link menu__link--active" href="index.html">Agencja</a>
+          <a href="" class="menu__link menu__link--active" href="index.html">Agencja</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link menu__link--second" href="portfolio.html">Portfolio</a>
+          <a href="" class="menu__link menu__link--second" href="portfolio.html">Portfolio</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link menu__link--third" href="#">Kontakt</a>
+          <a href="" class="menu__link menu__link--third" href="#">Kontakt</a>
         </li>
       </ul>
 
       <ul class="menu__contact-list">
-        <li class="menu__contact menu__contact--phone" href="tel:+48111111111">+48 111 111 111</li>
-        <li class="menu__contact" href="mailto:info@devstudio.com">info@devstudio.com</li>
-      </ul></div>
+        <li class="menu__contact-item" ><a class="menu__contact menu__contact-phone" href="tel:+48111111111">+48 111 111 111</a></li>
+        <li class="menu__contact-item menu__contact-lastitem" ><a class="menu__contact menu__contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+       <ul class="mobile-menu__social-list">
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link mobile-menu__social-link--active"
+            href="https://www.instagram.com/"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link mobile-menu__social-link--active"
+            href="https://twitter.com/"
+            target="_blank"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link mobile-menu__social-link--active"
+            href="https://www.facebook.com/"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-menu__social-item">
+          <a
+            class="mobile-menu__social-link mobile-menu__social-link--active"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            >Linkedln</a
+          >
+        </li>
+      </ul>
+    </div>
      <script src="./js/modal.js"></script>
      <script defer src="./js/mobilemenu.js"></script>
   </body>
