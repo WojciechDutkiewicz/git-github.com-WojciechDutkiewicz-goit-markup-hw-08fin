@@ -3,9 +3,7 @@
   background-color: $sixthcolor;
   padding-top: 60px;
   padding-bottom: 60px;
-  &__social {
-    margin-bottom: 20px;
-  }
+
   &__brandname {
     text-align: center;
     color: $fifhtcolor;
@@ -34,7 +32,7 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
