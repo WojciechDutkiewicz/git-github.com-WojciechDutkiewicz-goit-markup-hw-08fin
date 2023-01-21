@@ -58,6 +58,11 @@
     margin-left: 24px;
   }
 }
+@media (min-width: 768px) {
+  .newsletterform {
+    margin-top: 0px;
+  }
+}
 //desktop
 @media (min-width: 1200px) {
   .newsletterform {
