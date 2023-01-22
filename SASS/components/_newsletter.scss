@@ -11,24 +11,6 @@
     text-align: center;
     margin-bottom: 20px;
   }
-
-  &__email {
-    width: 450px;
-    padding: 15px 16px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: #2f303a;
-    color: rgba(255, 255, 255, 0.6);
-    margin-right: 12px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 20px;
-  }
   &__email:hover,
   &__email:focus {
     outline: none;
@@ -58,6 +40,45 @@
     margin-left: 24px;
   }
 }
+
+.newsletterform__email {
+  width: 100%;
+  padding: 15px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 480px) {
+  .newsletterform__email {
+    width: 450px;
+    padding: 15px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .newsletterform {
     margin-top: 0px;

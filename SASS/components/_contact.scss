@@ -4,7 +4,7 @@
 }
 
 //tablet
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .contact {
     display: block;
     color: $thirdcolor;
@@ -35,10 +35,24 @@
   .contact {
     display: flex;
     margin-left: 350px;
+    color: $thirdcolor;
+    &__img {
+      fill: currentColor;
+    }
 
     &__link {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      color: currentColor;
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       gap: 10px;
       font-size: 14px;
+    }
+    &__link:hover,
+    &__link:focus {
+      color: $fourthcolor;
     }
   }
 }
